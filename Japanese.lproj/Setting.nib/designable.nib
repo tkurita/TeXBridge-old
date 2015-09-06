@@ -77,7 +77,6 @@
 							<string key="NSFrame">{{350, 12}, {205, 32}}</string>
 							<reference key="NSSuperview" ref="999228569"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="472649199">
 								<int key="NSCellFlags">67108864</int>
@@ -109,7 +108,6 @@
 							<string key="NSFrame">{{13, 42}, {543, 335}}</string>
 							<reference key="NSSuperview" ref="999228569"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="968279248"/>
 							<array class="NSMutableArray" key="NSTabViewItems">
 								<object class="NSTabViewItem" id="488711287">
 									<string key="NSIdentifier">TerminalSettings</string>
@@ -587,7 +585,7 @@
 													<object class="NSButtonCell" id="781466708">
 														<int key="NSCellFlags">67108864</int>
 														<int key="NSCellFlags2">0</int>
-														<string key="NSContents">xdvi を使う :</string>
+														<string key="NSContents">xdvi :</string>
 														<reference key="NSSupport" ref="23620853"/>
 														<reference key="NSControlView" ref="682756007"/>
 														<int key="NSTag">1</int>
@@ -602,7 +600,7 @@
 													<object class="NSButtonCell" id="130760736">
 														<int key="NSCellFlags">67108864</int>
 														<int key="NSCellFlags2">0</int>
-														<string key="NSContents">PictPrinter を使う</string>
+														<string key="NSContents">PictPrinter</string>
 														<reference key="NSSupport" ref="23620853"/>
 														<reference key="NSControlView" ref="682756007"/>
 														<int key="NSTag">2</int>
