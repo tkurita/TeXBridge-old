@@ -247,7 +247,7 @@ NSMutableDictionary *makeLogRecord(NSString* logContents, unsigned int theNumber
 #endif
         self.outputFile = [logContent substringWithRange:[result rangeAtIndex:1]];
         _hasOutput = YES;
-		_isDviOutput = [_outputFile hasPrefix:@".dvi"];
+		_isDviOutput = [_outputFile hasSuffix:@".dvi"];
 	}
 	
 #if useLog

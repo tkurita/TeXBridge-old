@@ -405,17 +405,17 @@ on lookup_typeset_output(a_texdoc, a_log_parser)
     if not outfile's item_exists() then
         return missing value
     end if
-    set a_result to missing value
-    if a_name ends with ".pdf"
-        tell PDFController's make_with(a_texdoc)
-            set_pdffile(outfile)
-            set typeset_out to it
-        end tell
-    else
+
+    if a_log_parser's is_dvi_output()
         tell DVIController's make_with(a_texdoc)
             set_dvifile(outfile)
             set_file_type()
             set_src_special_flag()
+            set typeset_out to it
+        end tell
+    else
+        tell PDFController's make_with(a_texdoc)
+            set_pdffile(outfile)
             set typeset_out to it
         end tell
     end if
@@ -427,7 +427,7 @@ on lookup_typeset_output(a_texdoc, a_log_parser)
 end
 
 on quick_typeset_preview()
-	--log "start quick_typeset_preview"
+    --log "start quick_typeset_preview"
 	try
 		set a_texdoc to prepare_typeset()
 	on error msg number errno
